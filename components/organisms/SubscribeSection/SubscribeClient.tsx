@@ -49,7 +49,7 @@ const SubscribeClient = () => {
       alert(err.response?.data?.error || "Something went wrong.");
     }
   };
-   if (isLoading) return <div>Loading...</div>;
+   if (isLoading) return <div>Loading....</div>;
   if (isError || !content) return <div>Failed to load subscription data</div>;
 
   return (
