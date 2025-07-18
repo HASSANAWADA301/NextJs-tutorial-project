@@ -9,18 +9,18 @@ const ThemeWrapper = ({ children }: { children: React.ReactNode }) => {
   const dispatch = useAppDispatch();
   const theme = useAppSelector((state) => state.ui.theme);
 
-  const [isReady, setIsReady] = useState(false); // <-- controls DOM update
+  const [isReady, setIsReady] = useState(false);
 
-  // First time: read from localStorage and sync to Redux
+  
   useEffect(() => {
     const saved = localStorage.getItem("theme");
     if (saved === "dark" || saved === "light") {
       dispatch(setTheme(saved));
     }
-    setIsReady(true); // only after we read from storage
+    setIsReady(true);
   }, [dispatch]);
 
-  // Apply dark class ONLY after we're ready
+
   useEffect(() => {
     if (!isReady) return;
 
