@@ -40,7 +40,7 @@ const FooterClient: React.FC<Props> = ({ data }) => {
         {content.sections.map((section, idx) => (
           <ul
             key={idx}
-            className={`${lang=='ar'?"text-right":"text-left"}max-[1024px]:text-center max-[1024px]:mt-6`}
+            className={`${lang=='ar'?"text-right":"text-left"} max-[1024px]:text-center max-[1024px]:mt-6`}
           >
             <li className="text-[20px] font-bold mb-2">{section.title}</li>
             {section.items.map((item, i) => (
