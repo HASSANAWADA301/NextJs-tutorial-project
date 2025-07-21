@@ -89,8 +89,8 @@ const FeedbackSectionClient: React.FC<Props> = ({ data }) => {
       {content.feedbacks.length > 0 && (
         <div
           className={`flex justify-center items-center gap-[50px] mt-[-100px] ${currentLang=='ar'?"pr-[300px] ":"pl-[300px] "} 
-        max-[1335px]:pl-[100px] 
-        max-[1024px]:pl-[0] max-[1024px]:flex-col max-[768px]:w-auto max-[768px]:h-auto`}
+        max-[1335px]: ${currentLang=='ar'?"pr-0 ":"pl-[100px] "} 
+        max-[1024px]:pl-[0] max-[1024px]:pr-[0] max-[1024px]:flex-col max-[768px]:w-auto max-[768px]:h-auto`}
         >
           {visibleCards.map((fb, i) => (
           <FeedbackCard

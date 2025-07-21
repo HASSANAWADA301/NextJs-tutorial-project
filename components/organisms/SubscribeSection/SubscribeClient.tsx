@@ -81,7 +81,8 @@ const SubscribeClient = () => {
           />
           <button
             onClick={handleSubscribe}
-            className="w-[136px] h-[40px] ml-[-150px] bg-[#eb6f2d] text-white rounded-[10px] border-none font-bold max-[1024px]:w-auto max-[1024px]:ml-[-90px]"
+            className={`w-[136px] h-[40px] ${lang=='ar'? "mr-[-150px] max-[1024px]:mr-[-35px]  ":"ml-[-150px] max-[1024px]:ml-[-90px]"}  bg-[#eb6f2d] text-white rounded-[10px] border-none font-bold 
+            max-[1024px]:w-auto `}
           >
             {content.buttonLabel}
           </button>
