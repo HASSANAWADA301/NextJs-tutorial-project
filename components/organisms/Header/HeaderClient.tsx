@@ -73,7 +73,7 @@ const HeaderClient = ({ headerConfig }: Props) => {
 
   return (
     <header className="block mx-auto justify-center pt-[20px] ">
-      <div className="justify-center m-auto w-full flex gap-[20px] text-gray-500 bg-white dark:bg-black">
+      <div className="justify-center m-auto w-full flex gap-[20px] text-gray-500 bg-white">
         <ThemeToggleButton/>
         <button onClick={() => handleLangChange("en")}>EN</button>
         <button onClick={() => handleLangChange("fr")}>FR</button>
